@@ -1,0 +1,92 @@
+\documentclass[twocolumn]{article}
+
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{anysize}
+
+\begin{document}
+
+    \marginsize{1in}{1in}{.25in}{.25in}
+    \setstretch{1.25}
+    \pagestyle{empty}
+    \onecolumn
+    \begin{multicols}{2}
+    \begin{align*}
+        PV&= nRT \to \frac{P}{\rho}=R^{*} T\\
+        \Delta S &= S^{\leftarrow}+S_{irr} \\
+        Pv^{\gamma}&=cost \to Adiabatico\\
+        x^{*} &= (1-\chi)x_{\small{LS}}^{*} + \chi x_{\small{VS}}^{*}  \\
+        \chi &= \frac{x^{*} -x_{\small{LS}^{*} }}{x_{\small{VS}}^{*} -x_{\small{LS}}^{*} } \\
+        h_{\small{L_{sat}}^{*} } &= h^{*} _{\small{LS}}+v_{\small{LS}}(P-P_{\small{SAT}}) \\
+        h^{*} _{L} &= c_{\small{L}}(T_{L}-T_{o})\\
+        s^{*} &= c\ln \frac{T_{\small{L}}}{T_{o}}\\
+        \dot{m} &= \rho \overline{w}_{}A   \\
+        \overline{w}_{2} &= \overline{w}_{1} \frac{A_{1}}{A_{2}} \\
+        s_{i}&=s_{o} + c \ln \frac{T_{i}}{T_{o}}  \\
+        \dot{L}^{\leftarrow} &= \dot{M}(h_{2}-h_{1})\stackrel{G.P}{=} \dot{M}c_{p}(T_{2}-T_{1})\\
+        \dot{E}&=\dot{M}\left( h^{*} +gz+\frac{1}{2}\overline{w}_{}^{2}  \right)+\dot{Q}^{\leftarrow}-\dot{L}^{\to} \stackrel{S.S}{=} 0\\
+        \dot{S} &= \sum\dot{M}_{in}s_{in}-\sum\dot{M}_{out}s_{out} + \dot{S}^{\leftarrow} + \dot{S}_{irr} \stackrel{S.S}{=} 0 \\
+        \Delta h  &\stackrel{G.P}{=} c_{p}^{*} \Delta T \\
+        \text{Ugello: }&\dot{M}(h_{4}-h_{5}) = \frac{\dot{M}w_{5}^{2}}{2} \\
+        c &= \sqrt{ \frac{\gamma P}{\rho}} = \sqrt{ \gamma R^{*} T } \\
+        X_{cr} &= X_{1}\left( \frac{2}{1+\gamma} \right)\\
+        \dot{q} &= \frac{\Delta T}{\sum R}\\
+        \Delta U &\stackrel{G.P}{=} Mc_{v}^{*} (T_{fin}-T_{in}) \\
+        &= Mc(T_{fin}-T_{in})\to \substack{\text{liquidi}\\\text{e solidi}}\\
+        \dot{q}(x) &= \dot{q}'''x-kc_{1}\\
+        T(x)&=-\frac{\dot{q}'''}{2k}(L^{2}-x^{2}) +c_{1}x+c_{2}
+    \end{align*}
+    \columnbreak
+    \\
+    \begin{align*}
+        \Delta S &\stackrel{G.P}{=} M\left( c^*_{v}\ln \frac{T_{2}}{T_{1}} + R^*\ln \frac{V_{2}}{V_{1}} \right) \\
+         &= M\left( c^*_{p}\ln \frac{V_{2}}{V_{1}}+c^*_{v}\ln \frac{P_{2}}{P_{1}} \right) \\
+         &= M\left( c^*_{p}\ln \frac{T_{2}}{T_{1}}-R^*\ln \frac{P_{2}}{P_{1}} \right)\\ 
+        \theta &= \theta_{i}\cdot e^{ \frac{-t}{\tau} }\\
+        \tau &= \frac{\rho c^{*} V}{hA_{s}}\\
+        Bi &= \frac{hL}{k_{s}}\leq 0,1 \\
+        t_{fin} &= -\frac{Mc}{hA}\ln\left( \frac{T_{fin}-T_{\infty}}{T_{in}-T_{\infty}} \right)\\
+        Re &= \frac{wL_{c}}{\nu} = \frac{\rho wL_{c}}{\mu} \stackrel{\text{tubi}}{=} \frac{\rho w_{m}D}{\mu} \stackrel{\text{tubi}}{=} \frac{4\dot{m}}{\mu rD} \\
+        Pr &= \frac{\mu c^{*}}{k} \\
+        Nu &= \frac{hL}{k_{F}} \\
+        x_{i}&=0,05Re\, D\\
+        x_{t}&=0,05Re\, D\, Pr \\
+        x_{iT}&=10D \\
+        Gr &= \frac{\rho w_{\small{NAT}}L}{\mu} \\
+        T\cdot&\lambda_{\small{MAX}}= 2898 \\
+        &\tau+\alpha+\rho =1 \\
+        \dot{Q}_{12} &= \frac{\sigma(T_{1}^{4}-T_{2}^{4})}{\frac{1-\varepsilon_{1}}{A_{1}\varepsilon_{1}}+\frac{1}{A_{1}F_{12}}+\frac{1-\varepsilon_{2}}{A_{2}\varepsilon_{2}}}  \\
+        F_{12}A_{1}&=F_{21}A_{2}\\
+        \dot{Q} &= UA_{s}\Delta T_{m,\ln} \\
+        \Delta T_{m,\ln} &= \frac{\Delta T_{1}-\Delta T_{2}}{\ln\left( \frac{\Delta T_{1}}{\Delta T_{2}} \right)}\\\dot{q}(r) &= \frac{\dot{q}'''r}{2}-\frac{kc_{1}}{r} \\
+        T(r) &= -\frac{\dot{q}'''}{4k}r^{2}+c_{1}\ln(r)+c_{2}
+    \end{align*}
+\end{multicols}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c| } 
+ \hline
+  & \small{$R_{CD} [K/W]$} & $\small{R_{CD} \text{ specifiche}}$ & \small{$R_{CV} [K/W]$} & $\small{R_{CV} \text{ specifiche}}$\\ \hline 
+  \text{Parete Piana} &  $\frac{S}{kA}$ &  $\frac{S}{k} [\frac{m^{2}K}{W}] \text{ per } \dot{q}''$ & $\frac{1}{hA}$ & $\frac{1}{h}[\frac{m^{2}K}{W}]$ \\ \hline
+  \text{Cilindro Cavo} & $\frac{\ln \frac{r_{e}}{r_{i}}}{2\pi kL}$ & $\frac{\ln \frac{r_{e}}{r_{i}}}{2\pi k}[\frac{mK}{W}] \text{ per } \dot{q}'$ & $\frac{1}{2\pi rLh}$ & $\frac{1}{2\pi rh}[\frac{mK}{W}]$\\ \hline
+  \text{Sfera Cava} & $\frac{r_{e}-r_{i}}{4\pi r_{e}r_{i} k}$ & N/A & $\frac{1}{4\pi r^{2}h}$ & N/A \\ \hline
+\end{tabular}
+\end{center}
+\textbf{L'USO DEL FORMULARIO DURANTE L'ESAME \'E PROIBITO PER TUTTI OLTRE GLI STUDENTI DSA PER CUI \'E PERMESSO}
+\newpage
+\begin{multicols}{2}
+\begin{gather}
+    test
+\end{gather}
+\columnbreak
+\begin{gather}
+    \\
+    test
+\end{gather}
+\end{multicols}
+
+    
+            
+\end{document}
